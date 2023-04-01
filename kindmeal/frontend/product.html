@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kindmeal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="logo">
+        <div>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        </div>
+        <div id="logo-right">
+            <div>
+                <p>Login</p>
+                <button>Facebook</button>
+                <button onclick="signIn()">Email</button>
+                <p>Sign Up</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div>
+            <a href="">Home</a>
+            <a href="">Meal Deal</a>
+            <a href="">Kindmoments</a>
+            <a href="">Recipes</a>
+            <a href="">Directory</a>
+            <a href="">Article</a>
+            <a href="">Mobile App</a>
+            <a href="">Help</a>
+        </div>
+    </nav>
+
+    <div class="header_bottom">
+        <div class="mini_conatainer">
+            <div class="heading">
+                <p>Meat-Free Deals | <span id="span">Restaurants In Malaysia</span></p>
+            </div>
+            <div class="para1">
+                <p>Browse delicious meat-free, vegetarian deals from top restaurants and cafes! Just click on "Get Free
+                    Coupon" to obtain instant discounts and dine at the restaurants. No upfront payment, booking or
+                    printing is needed. If you share it on social media, you'll even DOUBLE your discount!</p>
+            </div>
+            <div class="para2">
+                <p>Download our mobile app now to easily get coupons and start dining in a few seconds. Effortlessly
+                    save lives, health, environment and money now!</p>
+            </div>
+
+            <div class="buttons">
+                <input placeholder="Serach Shop or Deal Name" id="input" />
+                <select name="Categories" id="categories">
+                    <option value="">All Categories</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Salad">Salad</option>
+                    <option value="Bakery">Bakery</option>
+                    <option value="Tea & Dessert">Tea & Dessert</option>
+                    <option value="Local Delights">Local Delights</option>
+                    <option value="Jap & Korean">Jap & Korean</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Soup">Soup</option>
+                    <option value="Cute">Cute</option>
+
+                </select>
+
+                <select name="Locations" id="locations">
+                    <option value="">All Locations</option>
+
+                    <option value="Klang Valley">Klang Valley</option>
+                    <option value="Kuala Lumpur">Kuala Lumpur</option>
+                    <option value="Pataling Jaya">Pataling Jaya</option>
+                    <option value="Ampang">Ampang</option>
+                    <option value="Bangsar">Bangsar</option>
+                    <option value="Bangsar South">Bangsar South</option>
+                    <option value="Banting">Banting</option>
+                    <option value="Bukit Bintang">Bukit Bintang</option>
+                    <option value="Cheras">Cheras</option>
+                    <option value="Damansara Utam">Damansara Utam</option>
+                    <option value="Ipoh">Ipoh</option>
+                    <option value="Kepong">Kepong</option>
+                    <option value="Klang">Klang</option>
+                    <option value="Kota Damansara">Kota Damansara</option>
+                    <option value="Mont Kiara">Mont Kiara</option>
+                    <option value="Old Klang Road">Old Klang Road</option>
+                    <option value="Seri Kembangan">Seri Kembangan</option>
+                    <option value="Shah Alam">Shah Alam</option>
+                    <option value="Sri Pataling">Sri Pataling</option>
+                    <option value="Subang">Subang</option>
+                    <option value="Taman Desa">Taman Desa</option>
+                    <option value="Taman Tun">Taman Tun</option>
+                    <option value=""> </option>
+                    <option value="">Other States</option>
+                    <option value="Johor">Johor</option>
+                    <option value="Melaka">Melaka</option>
+                    <option value="Perak">Perak</option>
+
+
+                </select>
+
+                <button id="btn1">Search Deals</button>
+                <button id="btn2"> Browse Restaurants</button>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="meal-deal-top-img">
+        <img src="https://www.kindmeal.my/images/banner_directory.jpg" alt="">
+    </div>
+
+    <div id="meal-deal-products">
+
+    </div>
+</body>
+
+</html>
+<script src="./products.js"></script>
