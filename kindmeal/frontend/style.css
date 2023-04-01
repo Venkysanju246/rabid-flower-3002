@@ -339,13 +339,15 @@ footer .row {
 }
 
 .para1 {
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 10px;
+  /* line-height: 19px; */
+  /* font-family: poppins; */
   /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 .para2 {
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 10px;
 }
 
@@ -405,7 +407,6 @@ footer .row {
 #meal-deal-top-img {
   margin-top: 30px;
   width: 80%;
-
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin-bottom: 40px;
@@ -413,4 +414,192 @@ footer .row {
 
 #meal-deal-top-img>img {
   width: 100%;
+}
+
+
+
+
+#meal-deal-products {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 15px;
+
+}
+
+
+
+.first-pro-div {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid black; */
+  margin-left: 100px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+#mainimg {
+  width: 100%;
+}
+
+#cat {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: grey;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#des {
+  margin-left: 10px;
+
+  color: #696969;
+}
+
+#btn {
+  margin-left: 10px;
+
+  background-color: #f04e4e;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+#divTwo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#divTwo>p {
+  font-size: 17px;
+}
+
+#kinddis {
+  margin-top: 10px;
+}
+
+#expire {
+  margin-top: 10px;
+
+}
+
+/* single product design  */
+#singlep-banner-img>img {
+  width: 100%;
+  margin: auto;
+}
+
+#singlepro-profile-img>img {
+  width: 200px;
+  height: 200px;
+  border: 4px solid white
+}
+
+#singlepro-profile-img {
+  margin-left: 190px;
+  margin-top: -130px;
+
+}
+
+#singlepro-cat {
+  margin-left: 440px;
+  margin-top: -50px;
+}
+
+#singlepro-main {
+  margin-top: 40px;
+}
+
+#singlepro-main img {
+  height: 300px;
+}
+
+
+#singlepro-main {
+  display: flex;
+  justify-content: center;
+
+}
+
+#singlepro-sidemain {
+  margin-right: 30px;
+  margin-left: 80px;
+  border: 1px solid grey;
+  height: 180px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+}
+
+#singlepro-sidemain>h5 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: rgb(68, 67, 67);
+
+}
+
+#singlepro-sidemain>p {
+  font-size: 35px;
+  color: grey;
+}
+
+#singlepro-sidemain-two {
+  margin-left: 50px;
+  border: 1px solid grey;
+  height: 180px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#singlepro-sidemain-two>h5 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: rgb(68, 67, 67);
+
+}
+
+#singlepro-sidemain-two>p {
+  font-size: 35px;
+  color: grey;
+}
+
+#No-pre-payment>p {
+  margin-left: 800px;
+  margin-top: -70px;
+}
+
+#free-coupon {
+  margin-left: 900px;
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: #2D96FF;
+  border: none;
+  border-radius: 7px;
+}
+
+#singlepro-details {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+
+#diet {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#singlepro-details {
+  display: flex;
+}
+
+#tandc {
+  margin-top: 20px;
 }
