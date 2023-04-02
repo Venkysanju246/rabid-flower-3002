@@ -14,5 +14,14 @@ productRouter.get("/get", async (req, res) => {
       data: newData
    })
 })
+productRouter.delete("/delete/:id", async (req, res) => {
+   let id = req.params.id
+   console.log(id)
+   let deleted = await ProductModel.findByIdAndDelete({ _id: id })
+   res.send({
+      msg: "Product Deleted Successfully"
+   })
+
+})
 
 module.exports = productRouter
