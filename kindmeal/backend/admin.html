@@ -5,81 +5,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="./admin.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
-                    <h2>kindmeal</h2>
+
+
+    <section id="menu">
+        <div class="logo">
+            <h2>KINDMEAL.MY</h2>
+
+        </div>
+
+        <div class="items">
+            <li><i class="fa-solid fa-chart-pie"></i><a href="./admin.html">Dashboard</a></li>
+            <li><i class="fa-solid fa-rotate-right"></i><a href="#">Returns</a></li>
+            <li><i class="fa-solid fa-file-invoice-dollar"></i><a href="#">Payments</a></li>
+            <li><i class="fa-brands fa-wpforms"></i><a href="">Inventory</a></li>
+            <li><i class="fa-regular fa-credit-card"></i><a href="./analytics.html">Analytics</a></li>
+            <li><i class="fa-sharp fa-solid fa-headset"></i><a href="#">Support</a></li>
+            <hr>
+            <li> <i class="fa-solid fa-right-from-bracket"></i><a href="../frontend/index.html">Logout</a></li>
+
+        </div>
+
+
+        <div class="dark-toggle">
+            <input type="checkbox" class="checkbox">
+            <p class="text" id="toggletext">Dark mode</p>
+        </div>
+
+    </section>
+
+    <!-- interface -->
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="ni">
+                <div>
+                    <i id="menu-btn" class="fa-brands fa-usb "></i>
                 </div>
-                <div class="close" id="close-btn">
-                    <span class="material-icons-sharp">close</span>
-                </div>
+                <form>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search products" id="searchinp">
+                    </div>
+                </form>
             </div>
 
-            <div class="sidebar">
-                <a href="#">
-                    <span class="material-icons-sharp"> grid_view </span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">
-                        person
-                        </span>
-                    <h3>Customers</h3>
-                    </a>
-                 <a href="#">
-                    <span class="material-icons-sharp">
-                        receipt_long
-                        </span>
-                    <h3>Orders</h3>
-                </a>
-             <a href="#">
-                    <span class="material-icons-sharp">
-                       insights
-                        </span>
-                    <h3>Analytics</h3>
-                </a>
-               <a href="#">
-                    <span class="material-icons-sharp">
-                      mail_outline
-                        </span>
-                    <h3>Messages</h3>
-                    <span class="message-count">26</span>
-                </a>
-                 <a href="#">
-                    <span class="material-icons-sharp">
-                       inventory
-                        </span>
-                    <h3>Products</h3>
-                </a>
-                 <a href="#">
-                    <span class="material-icons-sharp">
-                        report_gmailerrorred
-                        </span>
-                    <h3>Reports</h3>
-                </a>
-                 <a href="#">
-                    <span class="material-icons-sharp"> settings</span>
-                    <h3>Settings</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp"> add</span>
-                    <h3>Add Product</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp"> logout </span>
-                    <h3>Log-out</h3>
-                </a>
+            <div class="profile">
+                <div>
+                    <i id="bell-icon" class="fa-regular fa-bell"></i>
+
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWNTiq9IDokwKAKD68rWcfvb_790X2MOxIA&usqp=CAU"
+                        alt="">
+
+                </div>
             </div>
-        </aside>
-    </div>
+        </div>
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+        <a href="../frontend/index.html">
+            <button id="hbtn">Home</button></a>
+        <button id="btn">+ Add Product</button>
+        <button class="counter">Click</button>
+
+        <div class="values">
+            <div class="val-box">
+                <i class="fa-solid fa-arrow-trend-down"></i>
+
+                <div>
+                    <h3 id="o-stock">0</h3>
+                    <span>Out of Stock</span>
+                </div>
+
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div>
+                    <h3 id="total-orders">0</h3>
+                    <span>Total Orders</span>
+                </div>
+
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-shop"></i>
+                <div>
+                    <h3 id="total-products"></h3>
+                    <span>Total Products</span>
+                </div>
+
+            </div>
+            <div class="val-box">
+                <i class="fa-solid fa-arrow-trend-up"></i>
+                <div>
+                    <h3 id="s-count">5</h3>
+                    <span>Stock Count</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>price</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                        <th>Edit</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="vac" class="formpop">
+            <div class="formcontent">
+                <!-- <form > -->
+                <!-- <label for="otp">Enter ID</label> -->
+
+                <input type="text" placeholder="Enter ID" id="id" required>
+                <!-- <label for="otp">Enter Category</label> -->
+
+                <input type="text" placeholder="Enter Category" id="category" required>
+
+                <!-- <label for="otp">Enter Gender</label> -->
+
+                <input type="text" placeholder="Enter bgimage url" id="bgimage" required>
+                <!-- <label for="otp">Enter Image</label> -->
+
+                <input type="text" placeholder="Enter Image Url" id="image" required>
+                <!-- <label for="otp">Enter Name</label> -->
+                <input type="text" placeholder="Enter mainimg url" id="mainimg" required>
+
+                <input type="text" placeholder="Enter Name" id="name" required>
+                <!-- <label for="otp">Enter Price</label> -->
+
+                <input type="text" placeholder="Enter Price" id="price" required>
+                <!-- <label for="otp">Enter Rating</label> -->
+
+                <input type="text" placeholder="Discount" id="rating" required>
+                <!-- <label for="otp">Enter Tag</label> -->
+
+                <!-- <input type="text" placeholder="Enter Tag" id="tag" required> -->
+                <button type="submit" class="update-btns">update</button>
+                <button type="submit" class="btns">Add</button>
+
+                <!-- </form> -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('#menu').toggleClass("active");
+        })
+    </script>
+
 </body>
 
 </html>
+
+
+<script src="./admin.js"></script>

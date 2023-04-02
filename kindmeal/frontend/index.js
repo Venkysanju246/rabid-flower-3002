@@ -1,3 +1,7 @@
+
+let logoutBtns = document.getElementById("logout-btns")
+let signin = document.getElementById("signin")
+
 function signIn() {
     var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
     var form = document.createElement('form');
@@ -22,11 +26,9 @@ function signIn() {
     }
     document.body.appendChild(form);
     form.submit();
+    // signin.style.display = "none"
+    // logoutBtns.style.display = "block"
 
-
-
-    // container 
-  
 }
 
 

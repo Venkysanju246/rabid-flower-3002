@@ -212,6 +212,11 @@ nav a:hover {
   color: gray;
 }
 
+
+#logout-btns {
+  display: none;
+}
+
 #mid-section-two {
   /* border: 1px solid red; */
   padding-top: 20px;
@@ -598,8 +603,29 @@ footer .row {
 
 #singlepro-details {
   display: flex;
+
 }
 
 #tandc {
   margin-top: 20px;
+}
+
+#img-gallery>img {
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#img-gallery {
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.list-unstyled>li {
+  list-style: none;
 }
